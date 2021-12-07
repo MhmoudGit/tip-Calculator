@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+<body>
+ <div id="logo"></div>
+
+
+
+ <div id="container">
+  <div id="left">
+    
+    <div id="top">
+      <label for="quantity">Bill:</label>
+      <input type="number" id="bill" placeholder="0">
+    </div>
+    
+
+    <div id="tips">
+      <label for="tips">Select Tip%</label>
+      <div class="percentCont">
+        <div class="btn" id="fiveP">5%</div>
+        <div class="btn" id="tenP">10%</div>
+      </div>
+      <div class="percentCont">
+        <div class="btn" id="fifteenP">15%</div>
+        <div class="btn" id="twentyP">25%</div>
+      </div>
+      <div class="percentCont">
+        <div class="btn" id="fiftyP">50%</div>
+        <input type="number" class="btn" id="custom" placeholder="Custom">
+      </div>
+    </div>
+
+    <div id="ppl">
+      <label for="quantity">Number Of People:</label>
+      <input type="number" id="people" min="1" placeholder="0"required>
+    </div>
+
+  </div>
+
+
+
+
+    <div id="right">
+      <div id="tipAmount">
+        <label class="la" for="amount">Tip Amount <br> / Person</label>
+        <div class="show" id="showTip">0.00</div>
+      </div>
+      <div id="total">
+        <label class="la" for="amount">Total <br> / Person</label>
+        <div class="show" id="showTotal">0.00</div>
+      </div>
+      <div id="reset">RESET</div>
+    </div>
+
+
+
+
+ </div>
+
+ 
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/MhmoudGit" target="_blank">Mahmoud</a>.
+  </footer>
+  <script src="Tip.js"></script>
+</body>
+</html>
